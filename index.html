@@ -1,71 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Barra de navegacion -->
+  <div class="nav-container">
+    <nav class="navbar">
+      <h1 class="navbar-logo">Cremaní</h1>
+      <h2 class="ver-carrito" id="verCarrito">🛒</h2>
+    </nav>
+  </div>
 
-	<h1 class="h1 text-center">CREMANÍ</h1>
-	<div class="container mt-3 mb-2">
-		<div class="row row-cols-1 row-cols-2-md text-center g-3">
-			<div class="card col m-2" style="width: 18rem;">
-				<img src="./img/cremademani.jpg" class="card-img-top" alt="cremademani">
-				<div class="card-body">
-				<h5 class="card-title">Crema de Maní</h5>
-				<p class="card-text">Llevalo a tan solo S/. 26 soles</p>
-				<button onclick="agregarProducto('Crema',26)"  class="btn btn-primary">Agregar carrito.</button>
-				</div>
-			</div>
+  <!-- tienda contenido -->
+  <div id="shopContent" class="shop-content"></div>
 
-			<div class="card col m-2" style="width: 18rem;">
-				<img src="./img/mermelada.jpg" class="card-img-top" alt="mermelada">
-				<div class="card-body">
-				<h5 class="card-title">Mermelada</h5>
-				<p class="card-text">Llevalo a tan solo S/. 20 soles</p>
-				<input type="button" onclick="agregarProducto('Mermelada',20)"  class="btn btn-primary" value="Agregar carrito."></input>
-				</div>
-			</div>
+    <!-- contenedor -->
+  <div id="modal-container" class="modal-container"></div>
 
-			<div class="card col m-2" style="width: 18rem;">
-				<img src="./img/miel.jpg" class="card-img-top" alt="miel">
-				<div class="card-body">
-				<h5 class="card-title">Miel</h5>
-				<p class="card-text">Llevalo a tan solo S/. 15 soles</p>
-				<input type="button" onclick="agregarProducto('Miel',15)"  class="btn btn-primary" value="Agregar carrito."></input>
-				</div>
-			</div>
-
-			<div class="card col m-2" style="width: 18rem;">
-				<img src="./img/stevia.jpg" class="card-img-top" alt="stevia">
-				<div class="card-body">
-				<h5 class="card-title">Stevia</h5>
-				<p class="card-text">Llevalo a tan solo S/. 13 soles</p>
-				<input type="button" onclick="agregarProducto('Stevia',13)"  class="btn btn-primary" value="Agregar carrito."></input>
-				</div>
-			</div>
-		</div>	
-		<ul id="lista-carro">
-	
-		</ul>
-	
-		<div class="text-center"	id="total-carro">Total: <span id="total"> 0.00</span></div>
-			
-
-		</div>
-		<div class="text-center">
-			<input type="button" onclick="reiniciar()"  class="btn btn-primary" value="Realizar compra"></input>
-		</div>
-		
-		
-	
-	
-    <script src="./script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/carrito.js"></script>
+  
 </body>
 </html>
-
-
