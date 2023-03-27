@@ -48,7 +48,7 @@ productos.forEach((product) =>{
 
   Toastify({
     text: `Se agregó ${product.cantidad} ${product.nombre} al carrito`,
-    duration: 2000,
+    duration: 1000,
     close: true,
     gravity: "top",
     position: "center",
